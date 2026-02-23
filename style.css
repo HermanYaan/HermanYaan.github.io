@@ -1,6 +1,6 @@
 body {
     font-family: "Times New Roman", Times, serif;
-    background-color: rgb(255,255,255);
+    background-color: rgb(248, 240, 210);
 }
 
 @media (min-width: 768px) {
@@ -35,8 +35,6 @@ body {
 
     .menu-btn {
         display: none;
-        font-size: 28px;
-        cursor: pointer;
     }
 }
 
@@ -58,7 +56,6 @@ body {
     }
 
     .menu-btn {
-        display: block;
         justify-content: end;
     }
 
@@ -77,6 +74,23 @@ body {
         font-size: 18px;
         text-decoration: none;
         color: black;
+    }
+
+    #Home {
+        margin: 30px 35px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        padding: 20px 15px;
+    }
+
+    #Home h1 {
+        font-size: 27px;
+        margin: 0px;
+    }
+
+    #Home p {
+        font-size: 17px;
+        margin: 0px;
     }
 }
 
