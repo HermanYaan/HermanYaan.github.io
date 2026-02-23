@@ -3,7 +3,7 @@ body {
     background-color: rgb(255,255,255);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     nav {
         display: flex;
         justify-content: space-between;
@@ -32,30 +32,51 @@ body {
         color: black;
         align-items: center;
     }
+
+    .menu-btn {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
+    }
 }
 
-@media(max-width: 1023px) {
+/* quote: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+@media (max-width: 768px) {
     nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin: 35px 35px 35px;
         padding: 10px 13px;
         border-bottom: 2px solid gray;
-        padding: 10px 13px;
+    }
+    
+    .left h1 {
+        font-size: 18px;
+        margin: 0px;
+        align-items: center;  
     }
 
-    .left h1 {
-        display: none;
+    .menu-btn {
+        display: block;
+        justify-content: end;
     }
 
     .right {
-        display: flex;
-        justify-content: space-between;
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
     }
 
-    .right a {
+    .right.active {
+        display: flex;
+    }
+
+    .right.active a{
         font-size: 18px;
         text-decoration: none;
         color: black;
-        align-items: center;
     }
 }
 
