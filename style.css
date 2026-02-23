@@ -35,7 +35,7 @@ body {
     }
 
     .left h1 {
-        font-size: 18px;
+        font-size: 22px;
         align-items: center;
         padding: 3px 0px;
     }
@@ -46,7 +46,7 @@ body {
     }
 
     .right a {
-        font-size: 18px;
+        font-size: 22px;
         text-decoration: none;
         color: black;
         align-items: center;
