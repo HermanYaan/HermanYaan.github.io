@@ -3,22 +3,53 @@ body {
     background-color: rgb(255,255,255);
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 20px 20px;
+@media (min-width: 1024px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 35px 35px 35px;
+    }
+
+    .left h1 {
+        font-size: 18px;
+        align-items: center;
+        padding: 3px 0px;
+    }
+
+    .right {
+        display: flex;
+        gap: 50px;
+    }
+
+    .right a {
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        align-items: center;
+    }
 }
 
-.left h1 {
-    font-size: 20px;
-    align-items: center;
-}
+@media(max-width: 1023px) {
+    nav {
+       margin: 20px 20px 20px;
+    }
 
-.right a {
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-    align-items: center;
-}
+    .left h1 {
+        font-size: 18px;
+        align-items: center;
+        padding: 3px 0px;
+    }
 
+    .right {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .right a {
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        align-items: center;
+    }
+}
 
